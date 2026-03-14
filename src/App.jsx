@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
-import Testimonials from './components/ui/testimonials';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import { SplineSceneBasic } from './components/ui/demo';
 
 function App() {
   const [mounted, setMounted] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <SplineSceneBasic />
         <Testimonials />
         <Contact />
       </main>
@@ -45,7 +47,7 @@ function App() {
           <p className="mb-4 md:mb-0 text-center md:text-left">© {new Date().getFullYear()} Big Bull Media. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/bigbull-media-456097391/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
           </div>
         </div>
       </footer>
